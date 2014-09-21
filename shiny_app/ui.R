@@ -24,9 +24,4 @@ shinyUI(fluidPage(
                     htmlOutput('stats')),
                 tabPanel("Data", dataTableOutput('tbl')),
 #                tabPanel("Debug", verbatimTextOutput("dbg")),
-                tabPanel("Documentation", helpText(
-                    "This application allows the exploration of the mtcars dataset included in the ",
-                    "standard distribution of R.",
-                    "You can select the variable on which to regress (all of them if none is selected), and whether you want to include the intercept.",
-                    "You can also explore the raw data in the Data tab."
-                    )))))))
+                tabPanel("Documentation", includeMarkdown("documentation.md")))))))
