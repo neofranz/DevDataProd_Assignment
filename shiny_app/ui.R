@@ -1,3 +1,5 @@
+library(markdown)
+
 data(mtcars)
 shinyUI(fluidPage(
     titlePanel("Relationship between MPG and other car characteristics"),
